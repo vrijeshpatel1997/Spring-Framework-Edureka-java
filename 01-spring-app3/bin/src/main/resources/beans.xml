@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http:// www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+
+
+
+<!-- 
+
+IN BEAN CONFIG FILE VALUE CAN VE GIVEN AS :
+
+1. AN ATTRIBUTE
+2. AN ELEMENT
+3. USING NAME SPACE
+
+ -->
+ 
+ 
+<!--  creating bean using setter injection using property setter injection
+
+value as an attribute
+ -->
+<bean id="user1" class="com.eduureka.spring.core.beans.User">
+
+
+<property name="firstName" value="Vrijesh"></property>
+<property name="lastName" value="Patel"></property>
+</bean>
+
+
+<!-- value as an element -->
+
+<bean id="user2" class="com.eduureka.spring.core.beans.User">
+<property name="firstName">
+		<value> Swati</value>
+	</property>
+	<property name="lastName">
+		<value> patel</value>
+	</property>
+</bean>
+
+
+
+<!-- value with namespace -->
+<bean id="user3" class="com.eduureka.spring.core.beans.User"
+  p:firstName="Rishi" p:lastName="lohia"
+>
+
+</bean>
+
+
+</beans>
