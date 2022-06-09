@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head></h:head> 
+<body> 
+
+
+
+
+
+
+
+
+
+<center>
+
+Please sign in here 
+
+<br />
+		<h:form>
+			
+			User Name : <h:inputText id="username" value="#{user.userName}" title="" />
+
+			<br />
+password: <input type="password"  value = "#{user.password}" />
+			<br />
+			<h:commandButton action="#{formController.onSubmitsignin}" value = "Submit " /> <!-- Must look up managed bean first -->
+			
+			
+
+			
+		</h:form>
+		</center>
+		
+		
+			<h3>Not  a user? click here to Register</h3>
+		<a href="http://localhost:8080/Milestone2/Register.xhtml">
+			Register</a>
+		
+		
+</body> 
+</html>
